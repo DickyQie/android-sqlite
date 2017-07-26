@@ -1,6 +1,5 @@
 # Android我的便签-----SQLite的使用方法 
- <div class='BlogContent'>
-                        <p>在Android开发中也有数据库的存在，最近有空，把以前写的一个便签来讲述一下Android中的数据库，跟大家分享分享的，希望对大家有所帮助。</p> 
+<p>在Android开发中也有数据库的存在，最近有空，把以前写的一个便签来讲述一下Android中的数据库，跟大家分享分享的，希望对大家有所帮助。</p> 
 <span id="OSC_h2_1"></span>
 <h2>SQLite简介</h2> 
 <p>SQLite，是一款轻量级的关系型数据库。由于它占用的资源非常少，所以在很多嵌入式设备都是用SQLite来存储数据。</p> 
@@ -100,6 +99,3 @@
             }
         }</code></pre> 
 <p><span style="color:#000000">由于代码太多，就不一一贴出来了，直接下载即可，&nbsp;</span></p> 
-<p>&nbsp;</p> 
-
-                    </div>
