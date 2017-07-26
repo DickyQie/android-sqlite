@@ -1,5 +1,5 @@
 # Android我的便签-----SQLite的使用方法 
-<p>在Android开发中也有数据库的存在，最近有空，把以前写的一个便签来讲述一下Android中的数据库，跟大家分享分享的，希望对大家有所帮助。</p> 
+  <p>在Android开发中也有数据库的存在，最近有空，把以前写的一个便签来讲述一下Android中的数据库，跟大家分享分享的，希望对大家有所帮助。</p> 
 <span id="OSC_h2_1"></span>
 <h2>SQLite简介</h2> 
 <p>SQLite，是一款轻量级的关系型数据库。由于它占用的资源非常少，所以在很多嵌入式设备都是用SQLite来存储数据。</p> 
@@ -69,10 +69,9 @@
         String sql=UtilDB.USER_ID+"=?";
         String[] strings=new String[]{id};
         return sqLiteDatabase.update(UtilDB.DATABASE_TABLE,contentValues,sql,strings)&gt;0;  //成功返回true</code></pre> 
-<p>5：查询数据&nbsp; 便签中&nbsp; 使用的是降序排列的</p> 
+<p><span style="color:#000000">5：查询数据&nbsp; 便签中&nbsp; 使用的是降序排列的</span></p> 
 <pre><code class="language-java">  Cursor cursor=sqLiteDatabase.query(UtilDB.DATABASE_TABLE,null,null,null,null,null,UtilDB.USER_ID+" desc");//条件查询降序排序   </code></pre> 
-<p>得到数据：</p> 
-<p>&nbsp;&nbsp; <span style="color:#008000">方式1：</span></p> 
+<p><span style="color:#008000">方式1</span></p> 
 <pre><code class="language-java">List&lt;UserInfo&gt; list=new ArrayList&lt;UserInfo&gt;();
  Cursor cursor=sqLiteDatabase.query(UtilDB.DATABASE_TABLE,null,null,null,null,null,UtilDB.USER_ID+" desc");
         if (cursor!=null){
@@ -85,7 +84,7 @@
                 list.add(userInfo);
             }
         }</code></pre> 
-<p>　&nbsp; <span style="color:#008000">方式2：通过游标得到数据</span></p> 
+<p><span style="color:#008000">方式2：通过游标得到数据</span></p> 
 <pre><code class="language-java">List&lt;UserInfo&gt; list=new ArrayList&lt;UserInfo&gt;();
         Cursor cursor=sqLiteDatabase.query(UtilDB.DATABASE_TABLE,null,null,null,null,null,UtilDB.USER_ID+" desc");
         if (cursor!=null){
@@ -99,3 +98,4 @@
             }
         }</code></pre> 
 <p><span style="color:#000000">由于代码太多，就不一一贴出来了，直接下载即可，&nbsp;</span></p> 
+
