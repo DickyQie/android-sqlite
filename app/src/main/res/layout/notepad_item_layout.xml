@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/notepad_item_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="9dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e4e4e4"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="3dp"
+        ></View>
+
+    <TextView
+        android:id="@+id/notepad_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:lines="2"
+        android:padding="6dp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/notepad_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:gravity="end"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:textSize="9sp"
+        />
+</LinearLayout>
